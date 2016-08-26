@@ -1,0 +1,25 @@
+<script src="javascript\newsController.js"></script>
+
+
+<div class="jumbotron" ng-app='newsApp'>
+  <div class="container" ng-controller='newsDisplayController'>
+
+<ul >
+  <li ng-repeat='curnews in news'>
+    <h1>{{curnews.date}}</h1>
+    <h3>{{curnews.location}}</h3>
+  </li>
+</ul>
+
+  <!--  <div class="panel panel-default" ng-repeat='curnews in news'>
+      <div class="panel-header">
+        <h1 class="h2 panel-title  text-center">{{curnews.date}}</h1>
+      </div>
+      <div class="panel-body">
+        <h3 class="text-center h2">{{curnews.location}}</h3>
+        <a href="#" class="btn btn-block btn-primary">News Download link</a>
+      </div>
+    </div>
+  -->
+  </div>
+</div>
